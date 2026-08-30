@@ -57,26 +57,31 @@ export default function BespokeSection() {
           {process.map((step, i) => (
             <li
               key={step.num}
-              className={`reveal flex flex-col gap-5 py-10 lg:py-14 lg:pr-8 ${getCellBorders(i)}`}
+              className={`group reveal relative flex flex-col gap-5 py-10 lg:py-14 lg:pr-8 transition-colors duration-300 ease-out ${getCellBorders(i)}`}
               data-delay={i + 1}
             >
+              {/* brass hairline that brightens on hover */}
+              <span className="absolute left-0 right-0 top-0 h-px bg-[#C5A059]/0 transition-colors duration-300 ease-out group-hover:bg-[#C5A059]/30" aria-hidden />
+
               <span
-                className="font-serif italic leading-none select-none"
+                className="font-serif italic leading-none select-none transition-colors duration-300 ease-out"
                 style={{
                   color: '#C5A059',
                   fontSize: 'clamp(3.75rem, 6vw, 5.5rem)',
                 }}
               >
-                {step.num}
+                <span className="block transition-colors duration-300 ease-out group-hover:text-[#F5F2EB]">
+                  {step.num}
+                </span>
               </span>
 
-              <span className="h-px w-10 bg-[#C5A059]/50" aria-hidden />
+              <span className="h-px w-10 bg-[#C5A059]/45 transition-colors duration-300 ease-out group-hover:w-16 group-hover:bg-[#C5A059]" aria-hidden />
 
-              <h3 className="font-serif font-light text-2xl md:text-3xl leading-[1.1] text-[#F5F2EB] text-balance">
+              <h3 className="font-serif font-light text-2xl md:text-3xl leading-[1.1] text-[#F5F2EB]/80 text-balance transition-colors duration-300 ease-out group-hover:text-[#C5A059]">
                 {step.title}
               </h3>
 
-              <p className="font-sans text-sm md:text-base leading-relaxed text-[#F5F2EB]/70 max-w-xs text-pretty">
+              <p className="font-sans text-sm md:text-base leading-relaxed text-[#F5F2EB]/55 max-w-xs text-pretty transition-colors duration-300 ease-out group-hover:text-[#F5F2EB]/80">
                 {step.text}
               </p>
             </li>
