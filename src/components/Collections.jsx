@@ -18,7 +18,7 @@ export default function Collections() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 auto-rows-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 md:gap-6 auto-rows-auto">
           {collections.map((c, i) => (
             <a
               key={c.key}
@@ -28,14 +28,16 @@ export default function Collections() {
               data-delay={Math.min((i % 4) + 1, 5)}
               aria-label={`${c.name} collection — ${c.items.join(', ')}`}
             >
-              {/* Editorial hairline frame — fades in on hover for the "gallery wall" feel */}
+              {/* Editorial hairline frame — always-visible on mobile (so the
+                  gallery feels framed, not a plain feed) and fades in on hover
+                  on larger viewports for the "gallery wall" feel. */}
               <span
                 aria-hidden
-                className="pointer-events-none absolute inset-3 md:inset-4 z-20
-                  border border-brass-400/0 group-hover:border-brass-400/60
-                  transition-[border-color] duration-700 ease-out-soft"
+                className={`pointer-events-none absolute z-20 border transition-[border-color,inset] duration-700 ease-out-soft
+                  inset-3 border-brass-400/35 md:inset-4 md:border-brass-400/0
+                  group-hover:border-brass-400/60`}
               />
-              <div className={`relative w-full ${c.height}`}>
+              <div className={`relative w-full ${c.mobileHeight ?? ''} ${c.height}`}>
                 <img
                   src={c.image}
                   alt={c.alt}

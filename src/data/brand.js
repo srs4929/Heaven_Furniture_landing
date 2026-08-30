@@ -34,7 +34,8 @@ export const collections = [
     image: '/sofa.jpeg',
     alt: 'A craftsman building and finishing a bespoke living-room piece by hand at the workbench',
     span: 'lg:col-span-7 lg:row-span-2',
-    height: 'h-[420px] md:h-[560px] lg:h-[720px]',
+    height: 'h-[460px] md:h-[560px] lg:h-[720px]',
+    mobileHeight: 'h-[460px]',
   },
   {
     key: 'bedroom',
@@ -43,7 +44,8 @@ export const collections = [
     image: '/bedroom.jpg',
     alt: 'Custom upholstered bed with quiet morning light',
     span: 'lg:col-span-5',
-    height: 'h-[420px] md:h-[340px] lg:h-[340px]',
+    height: 'h-[360px] md:h-[340px] lg:h-[340px]',
+    mobileHeight: 'h-[360px]',
   },
   {
     key: 'dining',
@@ -52,7 +54,8 @@ export const collections = [
     image: '/dining.jpg',
     alt: 'Solid timber dining table with sculptural chairs',
     span: 'lg:col-span-5',
-    height: 'h-[420px] md:h-[340px] lg:h-[340px]',
+    height: 'h-[520px] md:h-[340px] lg:h-[340px]',
+    mobileHeight: 'h-[520px]',
   },
   {
     key: 'office',
@@ -61,7 +64,8 @@ export const collections = [
     image: '/office.jpg',
     alt: 'Executive desk with custom shelving and natural light',
     span: 'lg:col-span-5',
-    height: 'h-[420px] md:h-[340px] lg:h-[340px]',
+    height: 'h-[360px] md:h-[340px] lg:h-[340px]',
+    mobileHeight: 'h-[360px]',
   },
   {
     key: 'bespoke',
@@ -70,8 +74,9 @@ export const collections = [
     image: '/bespoke.jpg',
     alt: 'Hand-drawn furniture sketches on a designer\u2019s desk',
     span: 'lg:col-span-7',
-    height: 'h-[420px] md:h-[460px] lg:h-[480px]',
+    height: 'h-[560px] md:h-[460px] lg:h-[480px]',
     accent: true,
+    mobileHeight: 'h-[560px]',
   },
 ]
 
