@@ -116,14 +116,61 @@ export const process = [
 ]
 
 export const whyHeaven = [
-  { num: '01', title: 'Free design consultation', text: 'Visit, call, or message us — we listen, measure, and propose before you commit.' },
-  { num: '02', title: 'Fully bespoke', text: 'Every piece is built to your space, your dimensions, and the way you live — not pulled off a shelf.' },
-  { num: '03', title: 'Premium wood & materials', text: 'Carefully sourced timber, natural fabrics, and honest hardware.' },
-  { num: '04', title: 'Skilled in-house craftsmanship', text: 'Built by makers in our Chattogram atelier who understand joinery, finish, and proportion.' },
-  { num: '05', title: 'Large Agrabad showroom', text: 'Visit, see, and touch the work — a real place with real pieces on display.' },
-  { num: '06', title: 'Delivery & installation included', text: 'We bring it in, place it, and leave the room better than we found it.' },
-  { num: '07', title: 'Easy payment options', text: 'A flexible plan that lets you commission with confidence.' },
+  {
+    num: '01',
+    title: 'Free design consultation',
+    text: 'Visit, call, or message us — we listen, measure, and propose before you commit.',
+    swatch: { name: 'Chattogram Atelier', meta: 'Site visit · No obligation', tone: 'ivory' },
+  },
+  {
+    num: '02',
+    title: 'Fully bespoke',
+    text: 'Every piece is built to your space, your dimensions, and the way you live — not pulled off a shelf.',
+    swatch: { name: 'Made to measure', meta: 'Your dimensions · Your room', tone: 'brass' },
+  },
+  {
+    num: '03',
+    title: 'Premium wood & materials',
+    text: 'Carefully sourced timber, natural fabrics, and honest hardware.',
+    swatch: { name: 'Burma Teak', meta: 'Solid hardwood · Hand-finished', tone: 'cocoa' },
+  },
+  {
+    num: '04',
+    title: 'Skilled in-house craftsmanship',
+    text: 'Built by makers in our Chattogram atelier who understand joinery, finish, and proportion.',
+    swatch: { name: 'Atelier joinery', meta: 'Mortise & tenon · Hand-sanded', tone: 'ink' },
+  },
+  {
+    num: '05',
+    title: 'Large Agrabad showroom',
+    text: 'Visit, see, and touch the work — a real place with real pieces on display.',
+    swatch: { name: 'Agrabad Showroom', meta: 'Open 7 days · Touch & feel', tone: 'tan' },
+  },
+  {
+    num: '06',
+    title: 'Delivery & installation included',
+    text: 'We bring it in, place it, and leave the room better than we found it.',
+    swatch: { name: 'White-glove install', meta: 'Chattogram · Across Bangladesh', tone: 'stone' },
+  },
+  {
+    num: '07',
+    title: 'Easy payment options',
+    text: 'A flexible plan that lets you commission with confidence.',
+    swatch: { name: 'Flexible plan', meta: 'EMI · Milestone billing', tone: 'brass-deep' },
+  },
 ]
+
+// Tone → tailwind classes for the swatch panel.
+// Picked to read clearly against the ivory-50 section background.
+export const swatchTones = {
+  ivory:     { bar: 'bg-ivory-200',     dot: 'bg-ivory-300',     edge: 'border-ink-800/15',   label: 'bg-ivory-200 text-ink-900' },
+  brass:     { bar: 'bg-brass-400',     dot: 'bg-brass-500',     edge: 'border-brass-700/30', label: 'bg-brass-500 text-ink-900' },
+  cocoa:     { bar: 'bg-cocoa-700',     dot: 'bg-cocoa-800',     edge: 'border-cocoa-800/40', label: 'bg-cocoa-800 text-ivory-100' },
+  ink:       { bar: 'bg-ink-700',       dot: 'bg-ink-800',       edge: 'border-ink-800/50',   label: 'bg-ink-800 text-ivory-100' },
+  tan:       { bar: 'bg-stone-300',     dot: 'bg-stone-400',     edge: 'border-stone-400/40', label: 'bg-stone-400 text-ink-900' },
+  stone:     { bar: 'bg-stone-200',     dot: 'bg-stone-300',     edge: 'border-stone-400/30', label: 'bg-stone-300 text-ink-900' },
+  'brass-deep': { bar: 'bg-brass-700', dot: 'bg-brass-600',     edge: 'border-brass-700/40', label: 'bg-brass-700 text-ivory-100' },
+}
 
 export const timeline = [
   { year: '2020', text: 'Founded by Abul Kalam Bhuiyan .' },
