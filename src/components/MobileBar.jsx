@@ -25,7 +25,7 @@ export default function MobileBar() {
           rel="noopener noreferrer"
           className="group flex w-full items-center justify-center gap-3 bg-brass-600 hover:bg-brass-500 active:bg-brass-700 text-ink-900 font-sans font-medium text-[13px] tracking-wider2 uppercase px-6 py-4 transition-all duration-500 ease-out-soft whitespace-nowrap"
         >
-          <span>Book Free Consultation</span>
+          <span>Request a Quote</span>
           <span
             className="arrow transition-transform duration-500 ease-out-soft group-hover:translate-x-1"
             aria-hidden

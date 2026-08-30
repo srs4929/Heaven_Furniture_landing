@@ -8,7 +8,7 @@ export default function Collections() {
           <div className="lg:col-span-2">
             <span className="marker reveal">Collections</span>
           </div>
-          <h2 className="lg:col-span-7 font-serif font-light text-display-md text-ink-800 reveal leading-[1.05] text-balance"
+          <h2 className="lg:col-span-7 font-serif font-light text-display-lg text-ink-800 reveal leading-[0.98] tracking-[-0.025em] text-balance"
               data-delay="1">
             A library of living.
           </h2>

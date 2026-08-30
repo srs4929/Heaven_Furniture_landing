@@ -39,14 +39,12 @@ export default function BespokeSection() {
             <span className="marker reveal !text-[#C5A059]">Bespoke</span>
           </div>
           <h2
-            className="lg:col-span-10 font-serif font-light text-display-lg text-[#F5F2EB] reveal text-balance leading-[1.02]"
+            className="lg:col-span-10 font-serif font-light text-display-lg text-[#F5F2EB] reveal text-balance leading-[0.98] tracking-[-0.025em]"
             data-delay="1"
           >
-            Your space
-            <br />
-            isn&rsquo;t standard.
-            <br />
-            <span className="italic" style={{ color: '#C5A059' }}>
+            <span className="block">Your space</span>
+            <span className="block">isn&rsquo;t standard.</span>
+            <span className="block italic" style={{ color: '#C5A059' }}>
               Why should your furniture be?
             </span>
           </h2>
@@ -64,10 +62,10 @@ export default function BespokeSection() {
               <span className="absolute left-0 right-0 top-0 h-px bg-[#C5A059]/0 transition-colors duration-300 ease-out group-hover:bg-[#C5A059]/30" aria-hidden />
 
               <span
-                className="font-serif italic leading-none select-none transition-colors duration-300 ease-out"
+                className="font-serif italic leading-[0.85] select-none transition-colors duration-300 ease-out tracking-[-0.04em]"
                 style={{
                   color: '#C5A059',
-                  fontSize: 'clamp(3.75rem, 6vw, 5.5rem)',
+                  fontSize: 'clamp(5rem, 9vw, 9rem)',
                 }}
               >
                 <span className="block transition-colors duration-300 ease-out group-hover:text-[#F5F2EB]">
@@ -102,7 +100,7 @@ export default function BespokeSection() {
             rel="noopener noreferrer"
             className="mt-4 btn-light group"
           >
-            Book Free Consultation
+            Request a Quote
             <span className="arrow">&rarr;</span>
           </a>
           <p className="mt-2 marker !text-[#C5A059]/80">No commitment required.</p>

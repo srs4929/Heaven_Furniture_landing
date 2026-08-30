@@ -87,7 +87,7 @@ export default function Navbar() {
                   ? 'bg-ink-800 text-ivory-100 hover:bg-ink-700'
                   : 'border border-ivory-100/60 text-ivory-100 hover:bg-ivory-100 hover:text-ink-800'}`}
             >
-              Book Free Consultation
+              Request a Quote
               <span aria-hidden>→</span>
             </a>
 
@@ -149,7 +149,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-3 mt-2 px-6 py-4 bg-ivory-100 text-ink-800
                 text-[11px] tracking-wider2 uppercase font-sans w-fit"
             >
-              Book Free Consultation <span aria-hidden>→</span>
+              Request a Quote <span aria-hidden>→</span>
             </a>
 
             {/* Quick-action icons — WhatsApp / Call / Maps */}

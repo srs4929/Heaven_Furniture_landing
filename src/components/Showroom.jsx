@@ -7,7 +7,7 @@ export default function Showroom() {
         {/* Image */}
         <div className="lg:col-span-7 relative h-[60vh] lg:h-auto reveal" data-delay="1">
           <img
-            src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1800&q=85"
+            src="/shoebox.jpeg"
             alt="The Heaven Furniture Mart showroom in Agrabad, Chattogram"
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"

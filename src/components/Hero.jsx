@@ -79,10 +79,11 @@ export default function Hero() {
           </span>
 
           <h1
-            className="mt-6 md:mt-8 font-serif font-light text-display-xl text-ivory-50 reveal in-view text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]"
+            className="mt-6 md:mt-8 font-serif font-light text-display-lg text-ivory-50 reveal in-view text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)] leading-[1.02]"
             data-delay="2"
           >
-            Furniture, <span className="italic font-light text-brass-400">Crafted</span> Around You.
+            <span className="block">Furniture,</span>
+            <span className="block italic font-light text-brass-400">Crafted Around You.</span>
           </h1>
 
           <p
@@ -102,7 +103,7 @@ export default function Hero() {
                 transition-all duration-500 ease-out-soft
                 hover:bg-brass-500 hover:text-ink-900 hover:gap-6 group"
             >
-              Book Free Consultation
+              Request a Quote
               <span className="arrow transition-transform duration-500 group-hover:translate-x-1.5">→</span>
             </a>
             <a

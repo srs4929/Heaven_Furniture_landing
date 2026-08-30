@@ -121,7 +121,7 @@ export const whyHeaven = [
 ]
 
 export const timeline = [
-  { year: '2020', text: 'Founded by Abul Kalam Bhuiyan in Chattogram with a small atelier and a clear idea.' },
+  { year: '2020', text: 'Founded by Abul Kalam Bhuiyan .' },
   { year: '2021', text: 'The Agrabad showroom opens its doors to Chattogram.' },
   { year: '2024–25', text: 'Featured at the International Furniture Fair, Chattogram.' },
   { year: '2025', text: 'Joined the Chattogram Chamber of Commerce.' },

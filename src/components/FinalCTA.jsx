@@ -5,7 +5,7 @@ export default function FinalCTA() {
     <section className="relative bg-ink-900 text-ivory-100 overflow-hidden">
       <div className="relative h-[80vh] min-h-[600px] w-full grain-overlay">
         <img
-          src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=2200&q=85"
+          src="/luxary_dining.png"
           alt="A quiet interior with bespoke furniture, warm light and timeless materials"
           className="absolute inset-0 h-full w-full object-cover"
           loading="lazy"
@@ -40,7 +40,7 @@ export default function FinalCTA() {
                   transition-all duration-500 ease-out-soft
                   hover:bg-brass-500 hover:text-ink-900 hover:gap-6 group"
               >
-                Book Free Consultation
+                Request a Quote
                 <span className="arrow transition-transform duration-500 group-hover:translate-x-1.5">→</span>
               </a>
               <a

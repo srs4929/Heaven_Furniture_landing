@@ -54,10 +54,14 @@ export default {
         widest3: '0.4em',
       },
       fontSize: {
-        // Editorial scale
-        'display-xl': ['clamp(3.5rem, 8vw, 7.5rem)', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
-        'display-lg': ['clamp(2.75rem, 6vw, 5.25rem)', { lineHeight: '1', letterSpacing: '-0.02em' }],
-        'display-md': ['clamp(2.25rem, 4.5vw, 3.75rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+        // Editorial scale — high-fashion magazine hierarchy
+        'display-xl': ['clamp(3.75rem, 9vw, 9rem)', { lineHeight: '0.92', letterSpacing: '-0.035em' }],
+        'display-lg': ['clamp(3rem, 6.5vw, 6.5rem)', { lineHeight: '0.98', letterSpacing: '-0.025em' }],
+        'display-md': ['clamp(2.5rem, 5vw, 4.75rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+        'display-sm': ['clamp(2rem, 4vw, 3.25rem)', { lineHeight: '1.1', letterSpacing: '-0.015em' }],
+        // Editorial drop caps + oversized numerals
+        'numeral-xl': ['clamp(5rem, 9vw, 9rem)', { lineHeight: '0.85', letterSpacing: '-0.04em' }],
+        'numeral-lg': ['clamp(4.25rem, 7vw, 7rem)', { lineHeight: '0.85', letterSpacing: '-0.035em' }],
       },
       maxWidth: {
         '8xl': '88rem',
