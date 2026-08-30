@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background image — slow, ambient zoom */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2400&q=85"
+          src="/hero_image.jpg"
           alt="A bespoke living room with custom upholstered sofa, warm timber, and quiet natural light"
           className="h-full w-full object-cover animate-slow-zoom"
           loading="eager"
@@ -20,7 +20,7 @@ export default function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(180deg, rgba(10,16,14,0.85) 0%, rgba(10,16,14,0.55) 35%, rgba(10,16,14,0.78) 70%, rgba(10,16,14,0.95) 100%)',
+              'linear-gradient(180deg, rgba(10,16,14,0.65) 0%, rgba(10,16,14,0.35) 35%, rgba(10,16,14,0.60) 70%, rgba(10,16,14,0.85) 100%)',
           }}
         />
         {/* Left-side vignette — anchors the headline copy */}
@@ -28,7 +28,7 @@ export default function Hero() {
           className="absolute inset-0 hidden md:block"
           style={{
             background:
-              'linear-gradient(90deg, rgba(10,16,14,0.85) 0%, rgba(10,16,14,0.55) 45%, rgba(10,16,14,0.20) 75%, rgba(10,16,14,0.10) 100%)',
+              'linear-gradient(90deg, rgba(10,16,14,0.70) 0%, rgba(10,16,14,0.40) 45%, rgba(10,16,14,0.12) 75%, rgba(10,16,14,0.06) 100%)',
           }}
         />
         {/* Mobile scrim — single unified gradient that darkens top + bottom edges
@@ -38,7 +38,7 @@ export default function Hero() {
           className="absolute inset-0 md:hidden"
           style={{
             background:
-              'linear-gradient(180deg, rgba(10,16,14,0.70) 0%, rgba(10,16,14,0.30) 28%, rgba(10,16,14,0.30) 62%, rgba(10,16,14,0.85) 100%)',
+              'linear-gradient(180deg, rgba(10,16,14,0.55) 0%, rgba(10,16,14,0.20) 28%, rgba(10,16,14,0.20) 62%, rgba(10,16,14,0.70) 100%)',
           }}
         />
         {/* Text-anchor scrim — extra darkness directly behind the headline + sub-copy
@@ -48,7 +48,7 @@ export default function Hero() {
           className="absolute inset-0 hidden md:block"
           style={{
             background:
-              'radial-gradient(ellipse 70% 55% at 18% 52%, rgba(10,16,14,0.70) 0%, rgba(10,16,14,0.35) 45%, rgba(10,16,14,0.00) 75%)',
+              'radial-gradient(ellipse 70% 55% at 18% 52%, rgba(10,16,14,0.55) 0%, rgba(10,16,14,0.25) 45%, rgba(10,16,14,0.00) 75%)',
           }}
         />
       </div>
@@ -79,7 +79,7 @@ export default function Hero() {
           </span>
 
           <h1
-            className="mt-6 md:mt-8 font-serif font-light text-display-lg text-ivory-50 reveal in-view text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)] leading-[1.02]"
+            className="mt-3 md:mt-4 font-serif font-light text-display-lg text-ivory-50 reveal in-view text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)] leading-[1.02]"
             data-delay="2"
           >
             <span className="block">Furniture,</span>
@@ -108,12 +108,14 @@ export default function Hero() {
             </a>
             <a
               href={`tel:${brand.phoneRaw}`}
-              className="inline-flex items-center gap-3 text-[12px] tracking-wider2 uppercase font-sans
-                text-ivory-100 pb-1 border-b border-ivory-100/40
-                transition-all duration-500 hover:border-brass-400 hover:text-brass-400"
+              className="inline-flex items-center gap-3 px-6 py-4 rounded-full
+                text-[12px] tracking-wider2 uppercase font-sans font-medium
+                text-ivory-100 border border-ivory-100/40 bg-ivory-100/[0.04] backdrop-blur-[2px]
+                transition-all duration-500 ease-out-soft
+                hover:border-brass-400 hover:text-brass-400 hover:bg-ivory-100/[0.08] hover:gap-4 group"
             >
               {brand.phone}
-              <span className="arrow">→</span>
+              <span className="arrow transition-transform duration-500 group-hover:translate-x-1">→</span>
             </a>
           </div>
         </div>

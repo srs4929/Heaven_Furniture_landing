@@ -31,7 +31,7 @@ export const collections = [
     key: 'living',
     name: 'Living',
     items: ['Sofas', 'Coffee Tables', 'TV Units', 'Consoles'],
-    image: '/living.jpg',
+    image: '/sofa.jpeg',
     alt: 'A craftsman building and finishing a bespoke living-room piece by hand at the workbench',
     span: 'lg:col-span-7 lg:row-span-2',
     height: 'h-[420px] md:h-[560px] lg:h-[720px]',

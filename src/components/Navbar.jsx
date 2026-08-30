@@ -97,17 +97,20 @@ export default function Navbar() {
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? 'Close menu' : 'Open menu'}
               aria-expanded={open}
-              className={`lg:hidden relative h-10 w-10 grid place-items-center
-                ${scrolled ? 'text-ink-800' : 'text-ivory-100'}`}
+              className={`lg:hidden relative h-11 w-11 grid place-items-center rounded-full
+                border transition-colors duration-500
+                ${scrolled
+                  ? 'text-ink-800 border-ink-800/25 hover:border-brass-500 hover:text-brass-600'
+                  : 'text-ivory-50 border-ivory-100/40 hover:border-brass-400 hover:text-brass-400'}`}
             >
               <span className="sr-only">Menu</span>
               <span
-                className={`absolute h-px w-6 bg-current transition-all duration-500
-                  ${open ? 'rotate-45' : '-translate-y-1.5'}`}
+                className={`absolute h-[2px] w-6 rounded-full bg-current transition-all duration-500 ease-out-soft
+                  ${open ? 'rotate-45' : '-translate-y-2'}`}
               />
               <span
-                className={`absolute h-px w-6 bg-current transition-all duration-500
-                  ${open ? '-rotate-45' : 'translate-y-1.5'}`}
+                className={`absolute h-[2px] w-6 rounded-full bg-current transition-all duration-500 ease-out-soft
+                  ${open ? '-rotate-45' : 'translate-y-2'}`}
               />
             </button>
           </div>
